@@ -110,21 +110,21 @@
         }
         WYTabBarItemView *tabItem = [[[NSBundle mainBundle] loadNibNamed:@"WYTabBarItemView" owner:nil options:nil] objectAtIndex:0];
         if (tagIndex == 0) {
-                tabItem.itemIconImageView.image = [UIImage imageNamed:@"tabbar_netbar_icon"];
-                tabItem.itemIconImageView.highlightedImage = [UIImage imageNamed:@"tabbar_netbar_icon_hover"];
-                tabItem.itemLabel.text = @"网吧";
+                tabItem.itemIconImageView.image = [UIImage imageNamed:@"icon_billing"];
+                tabItem.itemIconImageView.highlightedImage = [UIImage imageNamed:@"icon_billing_light"];
+                tabItem.itemLabel.text = @"开单";
         }else if (tagIndex == 1){
-                tabItem.itemIconImageView.image = [UIImage imageNamed:@"tabbar_activity_icon"];
-                tabItem.itemIconImageView.highlightedImage = [UIImage imageNamed:@"tabbar_activity_icon_hover"];
-                tabItem.itemLabel.text = @"赛事";
+                tabItem.itemIconImageView.image = [UIImage imageNamed:@"icon_goods"];
+                tabItem.itemIconImageView.highlightedImage = [UIImage imageNamed:@"icon_goods_light"];
+                tabItem.itemLabel.text = @"商品";
         }else if (tagIndex == 2){
-                tabItem.itemIconImageView.image = [UIImage imageNamed:@"tabbar_recomm_icon"];
-                tabItem.itemIconImageView.highlightedImage = [UIImage imageNamed:@"tabbar_recomm_icon_hover"];
-                tabItem.itemLabel.text = @"约战";
+                tabItem.itemIconImageView.image = [UIImage imageNamed:@"icon_indent"];
+                tabItem.itemIconImageView.highlightedImage = [UIImage imageNamed:@"icon_indent_light"];
+                tabItem.itemLabel.text = @"订单";
         }else if (tagIndex == 3){
-                tabItem.itemIconImageView.image = [UIImage imageNamed:@"tabbar_mine_icon"];
-                tabItem.itemIconImageView.highlightedImage = [UIImage imageNamed:@"tabbar_mine_icon_hover"];
-                tabItem.itemLabel.text = @"我的";
+                tabItem.itemIconImageView.image = [UIImage imageNamed:@"icon_customer"];
+                tabItem.itemIconImageView.highlightedImage = [UIImage imageNamed:@"icon_customer_light"];
+                tabItem.itemLabel.text = @"我的客户";
         }
         
         [controllerTabs addObject:tabItem];
