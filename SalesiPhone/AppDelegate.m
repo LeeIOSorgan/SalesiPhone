@@ -9,6 +9,7 @@
 #import "AppDelegate.h"
 #import "MineViewController.h"
 #import "WYNavigationController.h"
+#import "WelcomeViewController.h"
 
 @interface AppDelegate ()<WYTabBarControllerDelegate>
 
@@ -20,7 +21,7 @@
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
     
-    [self signIn];
+    [self signOut];
     
     [self.window makeKeyAndVisible];
     
@@ -53,14 +54,14 @@
 - (void)signOut{
     NSLog(@"signOut");
     
-//    WelcomeViewController* welcomeViewController = [[WelcomeViewController alloc] init];
-//    WYNavigationController* navigationController = [[WYNavigationController alloc] initWithRootViewController:welcomeViewController];
-//    navigationController.navigationBarHidden = YES;
-//    self.window.rootViewController = navigationController;
-//    
-//    _mainTabViewController = nil;
+    WelcomeViewController* welcomeViewController = [[WelcomeViewController alloc] init];
+    WYNavigationController* navigationController = [[WYNavigationController alloc] initWithRootViewController:welcomeViewController];
+    navigationController.navigationBarHidden = YES;
+    self.window.rootViewController = navigationController;
     
-//    [[WYEngine shareInstance] logout];
+    _mainTabViewController = nil;
+
+    
 }
 
 - (void)applicationWillResignActive:(UIApplication *)application {
