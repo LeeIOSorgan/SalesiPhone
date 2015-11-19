@@ -14,6 +14,14 @@
     #import <Foundation/Foundation.h>
     #import <CoreText/CoreText.h>
     #import "WYSystem.h"
+
+#import "ZDefine.h"
+#import "LNNumberpad.h"
+
+#import "pinyin.h"
+
+#import "ZLog.h"
+
 #endif
 
 // Include any system framework and library headers here that should be included in all compilation units.
