@@ -8,6 +8,9 @@
 
 #import "AppDelegate.h"
 #import "MineViewController.h"
+#import "BillingViewController.h"
+#import "CommodityViewController.h"
+#import "OrderViewController.h"
 #import "WYNavigationController.h"
 #import "WelcomeViewController.h"
 
@@ -35,9 +38,9 @@
     tabViewController.delegate = self;
     
     tabViewController.viewControllers = [NSArray arrayWithObjects:
-                                         [[MineViewController alloc] init],
-                                         [[MineViewController alloc] init],
-                                         [[MineViewController alloc] init],
+                                         [[BillingViewController alloc] init],
+                                         [[CommodityViewController alloc] init],
+                                         [[OrderViewController alloc] init],
                                          [[MineViewController alloc] init],
                                          nil];
     

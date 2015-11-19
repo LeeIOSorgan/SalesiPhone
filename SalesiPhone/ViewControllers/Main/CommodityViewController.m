@@ -1,18 +1,18 @@
 //
-//  MineViewController.m
+//  CommodityViewController.m
 //  SalesiPhone
 //
-//  Created by Leejun on 15/11/12.
+//  Created by Leejun on 15/11/19.
 //  Copyright © 2015年 Leejun. All rights reserved.
 //
 
-#import "MineViewController.h"
+#import "CommodityViewController.h"
 
-@interface MineViewController ()
+@interface CommodityViewController ()
 
 @end
 
-@implementation MineViewController
+@implementation CommodityViewController
 
 - (void)viewDidLoad {
     [super viewDidLoad];
@@ -25,8 +25,9 @@
 }
 
 - (void)initNormalTitleNavBarSubviews{
-    [self setTitle:@"我的客户"];
+    [self setTitle:@"商品"];
 }
+
 /*
 #pragma mark - Navigation
 

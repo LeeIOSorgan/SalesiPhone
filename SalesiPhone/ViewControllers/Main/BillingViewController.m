@@ -1,18 +1,18 @@
 //
-//  MineViewController.m
+//  BillingViewController.m
 //  SalesiPhone
 //
-//  Created by Leejun on 15/11/12.
+//  Created by Leejun on 15/11/19.
 //  Copyright © 2015年 Leejun. All rights reserved.
 //
 
-#import "MineViewController.h"
+#import "BillingViewController.h"
 
-@interface MineViewController ()
+@interface BillingViewController ()
 
 @end
 
-@implementation MineViewController
+@implementation BillingViewController
 
 - (void)viewDidLoad {
     [super viewDidLoad];
@@ -25,8 +25,9 @@
 }
 
 - (void)initNormalTitleNavBarSubviews{
-    [self setTitle:@"我的客户"];
+    [self setTitle:@"开单"];
 }
+
 /*
 #pragma mark - Navigation
 

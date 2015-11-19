@@ -1,18 +1,18 @@
 //
-//  MineViewController.m
+//  OrderViewController.m
 //  SalesiPhone
 //
-//  Created by Leejun on 15/11/12.
+//  Created by Leejun on 15/11/19.
 //  Copyright © 2015年 Leejun. All rights reserved.
 //
 
-#import "MineViewController.h"
+#import "OrderViewController.h"
 
-@interface MineViewController ()
+@interface OrderViewController ()
 
 @end
 
-@implementation MineViewController
+@implementation OrderViewController
 
 - (void)viewDidLoad {
     [super viewDidLoad];
@@ -25,8 +25,9 @@
 }
 
 - (void)initNormalTitleNavBarSubviews{
-    [self setTitle:@"我的客户"];
+    [self setTitle:@"订单"];
 }
+
 /*
 #pragma mark - Navigation
 

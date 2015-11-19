@@ -7,6 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		44D99ABC1BFDAB6D00FAC923 /* BillingViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 44D99ABA1BFDAB6D00FAC923 /* BillingViewController.m */; };
+		44D99ABD1BFDAB6D00FAC923 /* BillingViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 44D99ABB1BFDAB6D00FAC923 /* BillingViewController.xib */; };
+		44D99AC11BFDAB9C00FAC923 /* OrderViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 44D99ABF1BFDAB9C00FAC923 /* OrderViewController.m */; };
+		44D99AC21BFDAB9C00FAC923 /* OrderViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 44D99AC01BFDAB9C00FAC923 /* OrderViewController.xib */; };
+		44D99AC61BFDABC200FAC923 /* CommodityViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 44D99AC41BFDABC200FAC923 /* CommodityViewController.m */; };
+		44D99AC71BFDABC200FAC923 /* CommodityViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 44D99AC51BFDABC200FAC923 /* CommodityViewController.xib */; };
 		44DDE1581BFCA1370095A97E /* WelcomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 44DDE1561BFCA1370095A97E /* WelcomeViewController.m */; };
 		44DDE1591BFCA1370095A97E /* WelcomeViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 44DDE1571BFCA1370095A97E /* WelcomeViewController.xib */; };
 		44E08CC91BF453B500BE3C93 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 44E08CC81BF453B500BE3C93 /* main.m */; };
@@ -51,6 +57,15 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		44D99AB91BFDAB6D00FAC923 /* BillingViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BillingViewController.h; sourceTree = "<group>"; };
+		44D99ABA1BFDAB6D00FAC923 /* BillingViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BillingViewController.m; sourceTree = "<group>"; };
+		44D99ABB1BFDAB6D00FAC923 /* BillingViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = BillingViewController.xib; sourceTree = "<group>"; };
+		44D99ABE1BFDAB9C00FAC923 /* OrderViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OrderViewController.h; sourceTree = "<group>"; };
+		44D99ABF1BFDAB9C00FAC923 /* OrderViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OrderViewController.m; sourceTree = "<group>"; };
+		44D99AC01BFDAB9C00FAC923 /* OrderViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = OrderViewController.xib; sourceTree = "<group>"; };
+		44D99AC31BFDABC200FAC923 /* CommodityViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CommodityViewController.h; sourceTree = "<group>"; };
+		44D99AC41BFDABC200FAC923 /* CommodityViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CommodityViewController.m; sourceTree = "<group>"; };
+		44D99AC51BFDABC200FAC923 /* CommodityViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CommodityViewController.xib; sourceTree = "<group>"; };
 		44DDE1551BFCA1370095A97E /* WelcomeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WelcomeViewController.h; sourceTree = "<group>"; };
 		44DDE1561BFCA1370095A97E /* WelcomeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WelcomeViewController.m; sourceTree = "<group>"; };
 		44DDE1571BFCA1370095A97E /* WelcomeViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = WelcomeViewController.xib; sourceTree = "<group>"; };
@@ -235,6 +250,15 @@
 		44E08CF91BF4591400BE3C93 /* Main */ = {
 			isa = PBXGroup;
 			children = (
+				44D99AB91BFDAB6D00FAC923 /* BillingViewController.h */,
+				44D99ABA1BFDAB6D00FAC923 /* BillingViewController.m */,
+				44D99ABB1BFDAB6D00FAC923 /* BillingViewController.xib */,
+				44D99ABE1BFDAB9C00FAC923 /* OrderViewController.h */,
+				44D99ABF1BFDAB9C00FAC923 /* OrderViewController.m */,
+				44D99AC01BFDAB9C00FAC923 /* OrderViewController.xib */,
+				44D99AC31BFDABC200FAC923 /* CommodityViewController.h */,
+				44D99AC41BFDABC200FAC923 /* CommodityViewController.m */,
+				44D99AC51BFDABC200FAC923 /* CommodityViewController.xib */,
 				44E08D1F1BF45ECB00BE3C93 /* MineViewController.h */,
 				44E08D201BF45ECB00BE3C93 /* MineViewController.m */,
 				44E08D211BF45ECB00BE3C93 /* MineViewController.xib */,
@@ -378,14 +402,17 @@
 			buildActionMask = 2147483647;
 			files = (
 				44E08CD71BF453B500BE3C93 /* LaunchScreen.storyboard in Resources */,
+				44D99AC71BFDABC200FAC923 /* CommodityViewController.xib in Resources */,
 				44E08D2E1BF45F3400BE3C93 /* WYTabBarItemView.xib in Resources */,
 				44E08D0B1BF4591400BE3C93 /* WYTitleNavBarView.xib in Resources */,
 				44E08D231BF45ECB00BE3C93 /* MineViewController.xib in Resources */,
 				44E08D301BF45F3400BE3C93 /* WYTabBarView.xib in Resources */,
 				44DDE1591BFCA1370095A97E /* WelcomeViewController.xib in Resources */,
 				44E08D171BF45C7500BE3C93 /* arrow@2x.png in Resources */,
+				44D99AC21BFDAB9C00FAC923 /* OrderViewController.xib in Resources */,
 				44E08D181BF45C7500BE3C93 /* LICENSE in Resources */,
 				44E08D1A1BF45C7500BE3C93 /* README in Resources */,
+				44D99ABD1BFDAB6D00FAC923 /* BillingViewController.xib in Resources */,
 				44E08CD41BF453B500BE3C93 /* Assets.xcassets in Resources */,
 				44E08D161BF45C7500BE3C93 /* arrow.png in Resources */,
 				44E08CD21BF453B500BE3C93 /* Main.storyboard in Resources */,
@@ -415,7 +442,9 @@
 				44E08CCC1BF453B500BE3C93 /* AppDelegate.m in Sources */,
 				44E08CC91BF453B500BE3C93 /* main.m in Sources */,
 				44E08CF31BF4585100BE3C93 /* NSDictionary+ObjectForKey.m in Sources */,
+				44D99ABC1BFDAB6D00FAC923 /* BillingViewController.m in Sources */,
 				44E08D0E1BF45A8600BE3C93 /* SPUIUtils.m in Sources */,
+				44D99AC11BFDAB9C00FAC923 /* OrderViewController.m in Sources */,
 				44E08CF81BF4589E00BE3C93 /* JSONKit.m in Sources */,
 				44DDE1581BFCA1370095A97E /* WelcomeViewController.m in Sources */,
 				44E08D1E1BF45D7A00BE3C93 /* WYCommonVcTransition.m in Sources */,
@@ -423,6 +452,7 @@
 				44E08D0A1BF4591400BE3C93 /* WYTitleNavBarView.m in Sources */,
 				44E08D081BF4591400BE3C93 /* WYNavigationController.m in Sources */,
 				44E08D2D1BF45F3400BE3C93 /* WYTabBarItemView.m in Sources */,
+				44D99AC61BFDABC200FAC923 /* CommodityViewController.m in Sources */,
 				44E08D091BF4591400BE3C93 /* WYSuperViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
