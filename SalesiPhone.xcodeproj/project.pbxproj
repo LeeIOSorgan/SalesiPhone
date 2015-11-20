@@ -1820,17 +1820,7 @@
 			path = Component;
 			sourceTree = "<group>";
 		};
-		44DDE1541BFCA0ED0095A97E /* Login */ = {
-			isa = PBXGroup;
-			children = (
-				44DDE1551BFCA1370095A97E /* WelcomeViewController.h */,
-				44DDE1561BFCA1370095A97E /* WelcomeViewController.m */,
-				44DDE1571BFCA1370095A97E /* WelcomeViewController.xib */,
-			);
-			path = Login;
-			sourceTree = "<group>";
-		};
-		44E08CBB1BF453B500BE3C93 = {
+		44DCB8181BFEE1CE00F5ADA7 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
 				44F4708B1BFDEEBE00F4475B /* libxml2.tbd */,
@@ -1851,8 +1841,26 @@
 				44D99DB11BFDCF6B00FAC923 /* AVFoundation.framework */,
 				44D99DAF1BFDCF6300FAC923 /* CoreBluetooth.framework */,
 				44D99DAD1BFDCF5000FAC923 /* ExternalAccessory.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		44DDE1541BFCA0ED0095A97E /* Login */ = {
+			isa = PBXGroup;
+			children = (
+				44DDE1551BFCA1370095A97E /* WelcomeViewController.h */,
+				44DDE1561BFCA1370095A97E /* WelcomeViewController.m */,
+				44DDE1571BFCA1370095A97E /* WelcomeViewController.xib */,
+			);
+			path = Login;
+			sourceTree = "<group>";
+		};
+		44E08CBB1BF453B500BE3C93 = {
+			isa = PBXGroup;
+			children = (
 				44E08CC61BF453B500BE3C93 /* SalesiPhone */,
 				44E08CE01BF453B600BE3C93 /* SalesiPhoneTests */,
+				44DCB8181BFEE1CE00F5ADA7 /* Frameworks */,
 				44E08CC51BF453B500BE3C93 /* Products */,
 			);
 			sourceTree = "<group>";
