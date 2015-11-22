@@ -30,6 +30,7 @@
 
 - (IBAction)skimAction:(id)sender;
 - (IBAction)loginAction:(id)sender;
+- (IBAction)registDeviceAction:(id)sender;
 
 @end
 
@@ -53,8 +54,12 @@
                                                  name:UIKeyboardWillHideNotification
                                                object:nil];
     
-    [self sendLogin];
+    UITapGestureRecognizer *gestureRecongnizer = [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(gestureRecognizer:)];
+    [self.view addGestureRecognizer:gestureRecongnizer];
+    
 //    [self registDevice:nil];
+    _accountTextField.text = @"000";
+    _passwordTextField.text = @"123456";
 }
 
 - (void)didReceiveMemoryWarning {
@@ -72,13 +77,28 @@
 }
 */
 
+- (void)gestureRecognizer:(UITapGestureRecognizer *)gestureRecognizer {
+    [self textFieldResignFirstResponder];
+}
+- (void)textFieldResignFirstResponder{
+    [self.accountTextField resignFirstResponder];
+    [self.passwordTextField resignFirstResponder];
+}
+
 - (IBAction)skimAction:(id)sender{
     AppDelegate* appDelegate = (AppDelegate*)[[UIApplication sharedApplication] delegate];
     [appDelegate signIn];
 }
 - (IBAction)loginAction:(id)sender{
-    AppDelegate* appDelegate = (AppDelegate*)[[UIApplication sharedApplication] delegate];
-    [appDelegate signIn];
+//    AppDelegate* appDelegate = (AppDelegate*)[[UIApplication sharedApplication] delegate];
+//    [appDelegate signIn];
+    
+    [self sendLogin];
+    
+}
+
+- (IBAction)registDeviceAction:(id)sender{
+    [self registDevice:sender];
 }
 
 #pragma mark - KeyboardNotification
@@ -103,7 +123,7 @@
     [UIView setAnimationDuration:[duration doubleValue]];
     [UIView setAnimationCurve:[curve intValue]];
     
-    supViewFrame.origin.y = SCREEN_HEIGHT - keyboardBounds.size.height - supViewFrame.size.height;
+    supViewFrame.origin.y = SCREEN_HEIGHT - keyboardBounds.size.height - supViewFrame.size.height+100;
     self.contentView.frame = supViewFrame;
     
     // commit animations
@@ -135,8 +155,8 @@
     
     ZLoginService *zs = [[ZServiceFactory sharedService]getLoginService];
     [zs logout];
-    NSString* name = @"000";
-    NSString* pwd = @"123456";
+    NSString* name = _accountTextField.text;
+    NSString* pwd = _passwordTextField.text;
     if([name length]==0|| [pwd length]<6)
     {
         [ZUtility showAlert:@"请检查用户名和密码输入是否正确！"];
@@ -150,7 +170,7 @@
     NSString *appId = [ZMacAddress getDeviceId];
     ZRegisterDeviceDTO* dto = [[ZRegisterDeviceDTO alloc]init];
     dto.appid = appId;
-    dto.verifyCode = @"343381";
+    dto.verifyCode = @"172398";
     dto.shopType = [NSNumber numberWithInt:100];//服装批发商
     
     ZOthersService* service = [[ZServiceFactory sharedService]getOtherService];
@@ -169,6 +189,9 @@
                     [ZResourceMgr shopType:[dto.shopType intValue]];
                     [[ZArchive instance] saveShopID:dto.shopId];
                     [[ZArchive instance] updateShopSettingString:40 key:kToken value:dto.token];
+                    
+                    AppDelegate* appDelegate = (AppDelegate*)[[UIApplication sharedApplication] delegate];
+                    [appDelegate signIn];
                     
 //                    [self sendImportRequestBeforAll];
 //                    NSString* name = [((UITextField*)[self viewWithTag:kTagUsername]) text];

@@ -416,6 +416,7 @@ static HttpManager* ins_ = nil;
                     //sessionID需要长久保存，不能被回收。
                     _sessionID = [tmpStr copy];
                 }
+                WYLog(@"response.text %@",response.text);
                 ZLogInfo(@"Send sessionId  %@",_sessionID);
                 ZLogInfo(@"Received String httpcode %d bizcode %d : %@",response.code.code, response.businessType, [NSString stringWithFormat:@"%@", [request responseString]]);
                 id tmpDelegate = [request.userInfo objectForKey:kRespDelegate];
